@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="template.css">
+    <title>Template Selection</title>
+</head>
+<body>
+
+    <nav class="navigation">
+        <h1><b>Resume Builder</b></h1>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <!--<li><a href="#">My Resumes</a></li>
+            <li><a href="#">Profile</a></li>-->
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section class="template-selection">
+        <h2>Select a Resume Template</h2>
+        <p>Choose a template that best suits your needs.</p>
+
+        <div class="template-grid">
+            <div class="template" onclick="selectTemplate('template1')">
+                <img src="modern.jpg" alt="Template 1">
+                <p>Template 1 - Modern</p>
+            </div>
+            <div class="template" onclick="selectTemplate('template2')">
+                <img src="classic.jpg" alt="Template 2">
+                <p>Template 2 - Classic</p>
+            </div>
+            <div class="template" onclick="selectTemplate('template3')">
+                <img src="creative.jpg" alt="Template 3">
+                <p>Template 3 - Creative</p>
+            </div>
+        </div>
+
+        <button id="proceedButton" disabled onclick="proceedToResume()">Proceed</button>
+    </section>
+
+    <script src="template.js"></script>
+
+</body>
+</html>
