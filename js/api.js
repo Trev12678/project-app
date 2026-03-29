@@ -1,4 +1,4 @@
-const API_BASE = 'https://ai-resume-builder-taxr.onrender.com';
+const API_BASE = 'https://ai-resume-builder-taxr.onrender.com/api';
 
 export async function loginUser(username, password) {
   const res = await fetch(`${API_BASE}/auth/login/`, {
