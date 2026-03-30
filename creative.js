@@ -40,7 +40,7 @@ async function enhanceWithAI() {
         `;
         enhancedBox.style.display = "block";
         enhancedDiv.innerHTML = "<em>Enhancing resume... please wait.</em>";
-        const data = await enhanceResume("Please enhance my resume with the following details:\n" + userResumeText);
+        const data = await enhanceResume(userResumeText);
         let improvedText = "No enhanced text returned.";
         if (data.conversation && Array.isArray(data.conversation)) {
             const assistantMsg = data.conversation.find(msg => msg.role === "assistant");
