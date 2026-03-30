@@ -49,9 +49,7 @@ export async function enhanceWithAI() {
       Skills: ${skills}
     `;
 
-    const data = await enhanceResume(
-        "Please enhance my resume with the following details:\n" + userResumeText
-      );
+    const data = await enhanceResume(userResumeText);
 
     let improvedText = "No enhanced text returned.";
     if (data.conversation && Array.isArray(data.conversation)) {
